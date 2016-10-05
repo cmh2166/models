@@ -1,0 +1,64 @@
+@prefix pcdm: <http://pcdm.org/models#> .
+@prefix pcdmw: <http://pcdm.org/works#> .
+@prefix pcdmu: <http://pcdm.org/use#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix dpla: <http://dp.la/info/developers/map/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bf: <http://bibframe.org/vocab/> .
+@prefix marcrel: <http://id.loc.gov/vocabulary/relators/> .
+@prefix : <http://example.edu/> .
+
+:c1 a pcdm:Collection ;
+  rdfs:label "Santa Barbara picture postcards collection" ;
+  edm:isRepresentationOf :rwo1 ;
+  pcdm:hasMember :pc1, :pc2, :pc3, :pc130 .
+:pc3 a pcdm:Object ;
+  rdfs:label "Souvenir of Santa Barbara, California" ;
+  edm:isRepresentationOf :rwo2 ;
+  pcdm:hasMember :front, :page1, :page2, :page7 .
+:front a pcdm:Object ;
+  rdfs:label "Front Page" ;
+  pcdmw:hasFileSet :fs1 .
+:page1 a pcdm:Object ;
+  rdfs:label "Page 1" ;
+  edm:isRepresentationOf :postoffice, :concert, :cityhall ;
+  pcdmw:hasFileSet :fs2 .
+:fs2 a pcdmw:FileSet ;
+  rdfs:label "Page 1 Image" ;
+  svcs:has_service <http://adrlprod1.library.ucsb.edu/images/3b%2Fae%2F7b%2F67%2F3bae7b67-bee6-41fa-8023-3f524c2ed780%2Foriginal/> ;
+  pcdmu:hasOriginalFile </fs2/files/master.jp2> ;
+  pcdm:hasFile </fs2/files/master.jp2>, </fs2/files/thumbnail.jpg> .
+:rwo1 a dpla:SourceResource ;
+  dc:title "Santa Barbara picture postcards collection" ;
+  dc:extent "130 Postcards" ;
+  bf:identifiedBy _:acc1, _:ark1 ;
+  dcterms:subject <http://id.loc.gov/authorities/subjects/sh85105462> ;
+  marcrel:rps <http://id.loc.gov/vocabulary/organizations/cusb> .
+:acc1 a :AccessionNumberIdentifier ;
+  rdf:value "SBHC Mss 36" .
+:ark1 a :ArkIdentifier ;
+  rdf:value "ark:/48907/f3k35rv9" .
+:rwo2 a dpla:SourceResource ;
+  dc:title "Souvenir of Santa Barbara, California" ;
+  dcterms:extent "18 prints forming 1 item : color (postcard format)" ;
+  bf:identifiedBy :acc2, :ark2 ;
+  dcterms:spatial <http://vocab.getty.edu/tgn/7017752> ;
+  dc:date "circa 1900s-1950s" ;
+  dc:description "Souvenir viewbook comprised of 18 postcards on accordion-folded pages." .
+:acc2 a :AccessionNumberIdentifier ;
+  rdf:value "cusbspcmss36-110130" .
+:ark2 a :ArkIdentifier ;
+  rdf:value "ark:/48907/f35x2743" .
+:postoffice a dpla:SourceResource ;
+  dc:title "Post Office" ;
+  dcterms:medium <http://id.loc.gov/authorities/subjects/sh85105462> .
+:concert a dpla:SourceResource ;
+  dc:title "Afternoon Concert, Bath House" ;
+  dcterms:medium <http://id.loc.gov/authorities/subjects/sh85105462> .
+:cityhall a dpla:SourceResource ;
+  dc:title "City Hall" ;
+  dcterms:medium <http://id.loc.gov/authorities/subjects/sh85105462> .

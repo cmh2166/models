@@ -4,6 +4,14 @@
 
 Use and expand the Hybox Modeling work and documentation done so far so it can serve as an exemplar of data modeling in action.
 
+This work to make a modeling exemplar project involves:
+
+1. Generating further documentation about the models given ;
+2. Update examples, sample RDF for the chosen models ;
+3. Look into creating machine-actionable metadata application profiles ;
+2. Evaluating the implementation of those models and profiles in the Hybox Sufia application layer ;
+3. Documenting that data/conceptual model to application layer for more general Hydra reference, discussion.
+
 ## Scope
 
 The scope of this work includes:
