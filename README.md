@@ -1,3 +1,8 @@
+# Hybox Modeling as Modeling Exemplar
+
+## Goal
+
+Use and expand the Hybox Modeling work and documentation done so far so it can serve as an exemplar of data modeling in action. 
 
 ## Scope
 
