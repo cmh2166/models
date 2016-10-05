@@ -33,9 +33,9 @@ PCDM Objects can be used to describe objects (both conceptual and physical), and
 
 When mapping from PCDM to DPLA, a `pcdm:Object` that is not `pcdm:hasMember` another `pcdm:Object` will be treated as a `dpla:SourceResource`.  Other resources may also be treated in this way.  These Objects may or may not be part of a `pcdm:Collection`.
 
-Such objects MUST have a stable web URL at which the object is rendered in a human readable way.  This is the object of `edm:isShownAt`.  Such objects SHOULD have a `dpla:WebResource` which is a `edm:preview` of the object, such as a thumbnail. 
+Such objects MUST have a stable web URL at which the object is rendered in a human readable way.  This is the object of `edm:isShownAt`.  Such objects SHOULD have a `dpla:WebResource` which is a `edm:preview` of the object, such as a thumbnail.
 
-As per Collections, the resulting DPLA resource may conflate information from an entire hierarchy of objects into a single resource. 
+As per Collections, the resulting DPLA resource may conflate information from an entire hierarchy of objects into a single resource.
 
 #### Files
 

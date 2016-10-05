@@ -2,7 +2,7 @@
 
 ## Goal
 
-Use and expand the Hybox Modeling work and documentation done so far so it can serve as an exemplar of data modeling in action. 
+Use and expand the Hybox Modeling work and documentation done so far so it can serve as an exemplar of data modeling in action.
 
 ## Scope
 
@@ -25,11 +25,11 @@ The scope of this work includes:
   * Web ACL
   * LDP projection
 
-
-## Out of Scope
-
-* APIs
-* Implementation pattern requirements
+* Review Models versus Implementation through:
+  * Fedora 4 - Hydra / Sufia stack
+  * APIs (?)
+  * Implementation pattern requirements
+  * Behaviors
 
 
 ## Agreements
