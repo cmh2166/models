@@ -1,5 +1,5 @@
 
-## Design Principles for Data Modeling in HyBox
+## Design Principles for Data Modeling in HyBox (Original)
 
 ### Use discovery and search requirements as a pragmatic means to determine the needed extent of the modeling efforts
 
@@ -11,7 +11,7 @@ For example, physical description of a postcard is intended only to be recorded 
 
 is thus acceptable compared to the more complex
 
-```json 
+```json
 {
   "height": {"value": 3, "units": "in"},
   "width": {"value": 4, "units": "in"}

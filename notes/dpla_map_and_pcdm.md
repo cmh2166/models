@@ -1,5 +1,5 @@
 
-## Relationship between DPLA MAP and PCDM
+## Relationship between DPLA MAP and PCDM (Original)
 
 This document notes the ways in which the DPLA Metadata Application Profile and PCDM can be used together.
 
