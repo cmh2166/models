@@ -1,0 +1,164 @@
+{
+    "@context": "pcdmcontext.jsonld",
+    "@graph": [
+        {
+            "hasMember": [
+                "http://example.edu/pc3",
+                "http://example.edu/pc1",
+                "http://example.edu/pc2",
+                "http://example.edu/pc130"
+            ],
+            "http://www.europeana.eu/schemas/edm/isRepresentationOf": {
+                "id": "http://example.edu/rwo1"
+            },
+            "id": "http://example.edu/c1",
+            "label": "Santa Barbara picture postcards collection",
+            "type": "Collection"
+        },
+        {
+            "id": "_:f9714ede91dc74089b380375b594f9c07b1"
+        },
+        {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": "ark:/48907/f35x2743",
+            "id": "http://example.edu/ark2",
+            "type": "http://example.edu/ArkIdentifier"
+        },
+        {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": "ark:/48907/f3k35rv9",
+            "id": "http://example.edu/ark1",
+            "type": "http://example.edu/ArkIdentifier"
+        },
+        {
+            "dc:date": "circa 1900s-1950s",
+            "dc:description": "Souvenir viewbook comprised of 18 postcards on accordion-folded pages.",
+            "dc:title": "Souvenir of Santa Barbara, California",
+            "dcterms:spatial": {
+                "id": "http://vocab.getty.edu/tgn/7017752"
+            },
+            "extent": "18 prints forming 1 item : color (postcard format)",
+            "http://bibframe.org/vocab/identifiedBy": [
+                {
+                    "id": "http://example.edu/ark2"
+                },
+                {
+                    "id": "http://example.edu/acc2"
+                }
+            ],
+            "id": "http://example.edu/rwo2",
+            "type": "http://dp.la/info/developers/map/SourceResource"
+        },
+        {
+            "dc:extent": "130 Postcards",
+            "dc:title": "Santa Barbara picture postcards collection",
+            "dcterms:subject": {
+                "id": "http://id.loc.gov/authorities/subjects/sh85105462"
+            },
+            "http://bibframe.org/vocab/identifiedBy": [
+                {
+                    "id": "_:f9714ede91dc74089b380375b594f9c07b2"
+                },
+                {
+                    "id": "_:f9714ede91dc74089b380375b594f9c07b1"
+                }
+            ],
+            "http://id.loc.gov/vocabulary/relators/rps": {
+                "id": "http://id.loc.gov/vocabulary/organizations/cusb"
+            },
+            "id": "http://example.edu/rwo1",
+            "type": "http://dp.la/info/developers/map/SourceResource"
+        },
+        {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": "cusbspcmss36-110130",
+            "id": "http://example.edu/acc2",
+            "type": "http://example.edu/AccessionNumberIdentifier"
+        },
+        {
+            "hasFile": [
+                "file:///fs2/files/thumbnail.jpg",
+                "file:///fs2/files/master.jp2"
+            ],
+            "http://pcdm.org/use#hasOriginalFile": {
+                "id": "file:///fs2/files/master.jp2"
+            },
+            "http://rdfs.org/sioc/services#has_service": {
+                "id": "http://adrlprod1.library.ucsb.edu/images/3b%2Fae%2F7b%2F67%2F3bae7b67-bee6-41fa-8023-3f524c2ed780%2Foriginal/"
+            },
+            "id": "http://example.edu/fs2",
+            "label": "Page 1 Image",
+            "type": "http://pcdm.org/works#FileSet"
+        },
+        {
+            "http://www.w3.org/1999/02/22-rdf-syntax-ns#value": "SBHC Mss 36",
+            "id": "http://example.edu/acc1",
+            "type": "http://example.edu/AccessionNumberIdentifier"
+        },
+        {
+            "http://pcdm.org/works#hasFileSet": {
+                "id": "http://example.edu/fs1"
+            },
+            "id": "http://example.edu/front",
+            "label": "Front Page",
+            "type": "Object"
+        },
+        {
+            "hasMember": [
+                "http://example.edu/front",
+                "http://example.edu/page2",
+                "http://example.edu/page7",
+                "http://example.edu/page1"
+            ],
+            "http://www.europeana.eu/schemas/edm/isRepresentationOf": {
+                "id": "http://example.edu/rwo2"
+            },
+            "id": "http://example.edu/pc3",
+            "label": "Souvenir of Santa Barbara, California",
+            "type": "Object"
+        },
+        {
+            "dc:title": "Afternoon Concert, Bath House",
+            "dcterms:medium": {
+                "id": "http://id.loc.gov/authorities/subjects/sh85105462"
+            },
+            "id": "http://example.edu/concert",
+            "type": "http://dp.la/info/developers/map/SourceResource"
+        },
+        {
+            "http://pcdm.org/works#hasFileSet": {
+                "id": "http://example.edu/fs2"
+            },
+            "http://www.europeana.eu/schemas/edm/isRepresentationOf": [
+                {
+                    "id": "http://example.edu/concert"
+                },
+                {
+                    "id": "http://example.edu/postoffice"
+                },
+                {
+                    "id": "http://example.edu/cityhall"
+                }
+            ],
+            "id": "http://example.edu/page1",
+            "label": "Page 1",
+            "type": "Object"
+        },
+        {
+            "dc:title": "Post Office",
+            "dcterms:medium": {
+                "id": "http://id.loc.gov/authorities/subjects/sh85105462"
+            },
+            "id": "http://example.edu/postoffice",
+            "type": "http://dp.la/info/developers/map/SourceResource"
+        },
+        {
+            "id": "_:f9714ede91dc74089b380375b594f9c07b2"
+        },
+        {
+            "dc:title": "City Hall",
+            "dcterms:medium": {
+                "id": "http://id.loc.gov/authorities/subjects/sh85105462"
+            },
+            "id": "http://example.edu/cityhall",
+            "type": "http://dp.la/info/developers/map/SourceResource"
+        }
+    ]
+}

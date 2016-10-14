@@ -3,11 +3,13 @@
 
 ### Introduction
 
+Compare to [Authorities Vitro Pilot](https://github.com/cul-it/lts-vitro-pilot/wiki#foafperson--madsrdfauthority) work?
+
 ### Model
 
-* foaf:Person
+#### foaf:Person
  * rdfs:label (MUST, unless there's foaf:name supplied)
- * foaf:name (SHOULD) 
+ * foaf:name (SHOULD)
  * foaf:familyName (MAY)
  * foaf:givenName (MAY)
  * schema:additionalName (MAY)
@@ -26,7 +28,7 @@
  * foaf:knows (MAY)
  * schema:affiliation (MAY)
 
-* foaf:Organization
+#### foaf:Organization
   * rdfs:label
 
 

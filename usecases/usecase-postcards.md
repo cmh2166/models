@@ -96,7 +96,7 @@ _:place1 a edm:Place ;
   wgs84_pos:long -23.517 .
 
 _:org2 a foaf:Organization ;
-  rdfs:label "Jones University" .
+  rdfs:label "Jones University" . 
 
 _:rwo2 a dpla:SourceResource ;
   dc:title "Agreement between Smith and Jones University" ;

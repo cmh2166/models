@@ -1,0 +1,274 @@
+{
+    "@context": "pcdmcontext.jsonld",
+    "@graph": [
+        {
+            "http://schema.org/birthDate": "1819",
+            "http://schema.org/deathDate": "1858",
+            "http://xmlns.com/foaf/0.1/knows": {
+                "id": "http://example.edu/bloggs1"
+            },
+            "http://xmlns.com/foaf/0.1/name": "Joe Cantor",
+            "id": "http://example.edu/cantor1",
+            "type": "http://xmlns.com/foaf/0.1/Person"
+        },
+        {
+            "hasFile": "file:///tn2/files/thumbnail.jpg",
+            "http://pcdm.org/use#hasOriginalFile": {
+                "id": "file:///tn2/files/thumbnail.jpg"
+            },
+            "id": "http://example.edu/tn2",
+            "label": "Postcard Thumbnail Image",
+            "type": "http://pcdm.org/works#FileSet"
+        },
+        {
+            "dc:date": "1843",
+            "dc:description": "A postcard from Bloggs to Cantor describing her cat",
+            "dc:rights": "This postcard is owned by Prof. J. Smith, and held by Jones University",
+            "dc:rightsHolder": {
+                "id": "http://example.edu/smith1"
+            },
+            "dc:title": "Postcard from Bloggs to Cantor (1843)",
+            "dcterms:creator": {
+                "id": "http://example.edu/bloggs1"
+            },
+            "dcterms:medium": {
+                "id": "http://id.loc.gov/authorities/subjects/sh85105462"
+            },
+            "dcterms:subject": {
+                "id": "http://id.loc.gov/authorities/subjects/sh85021262"
+            },
+            "http://id.loc.gov/vocabulary/relators/rcp": {
+                "id": "http://example.edu/cantor1"
+            },
+            "http://id.loc.gov/vocabulary/relators/rps": {
+                "id": "http://example.edu/org2"
+            },
+            "id": "http://example.edu/rwopc1",
+            "type": "http://dp.la/info/developers/map/SourceResource"
+        },
+        {
+            "hasFile": [
+                "file:///frontfs1/files/front.jp2",
+                "file:///frontfs1/files/front.jpg"
+            ],
+            "http://pcdm.org/use#hasOriginalFile": {
+                "id": "file:///frontfs1/files/front.jp2"
+            },
+            "id": "http://example.edu/frontfs1",
+            "label": "Front of Postcard Image",
+            "type": "http://pcdm.org/works#FileSet"
+        },
+        {
+            "http://www.w3.org/2003/01/geo/wgs84_pos#lat": {
+                "@value": "67.872",
+                "type": "http://www.w3.org/2001/XMLSchema#decimal"
+            },
+            "http://www.w3.org/2003/01/geo/wgs84_pos#long": {
+                "@value": "-23.517",
+                "type": "http://www.w3.org/2001/XMLSchema#decimal"
+            },
+            "id": "http://example.edu/place1",
+            "label": "Smithsville",
+            "type": "http://www.europeana.eu/schemas/edm/Place"
+        },
+        {
+            "dc:date": "2014",
+            "dc:description": "Governing agreement under which the postcard collection is managed",
+            "dc:title": "Agreement between Smith and Jones University",
+            "http://id.loc.gov/vocabulary/relators/sgn": [
+                {
+                    "id": "http://example.edu/curator1"
+                },
+                {
+                    "id": "http://example.edu/smith1"
+                }
+            ],
+            "id": "http://example.edu/rwo2",
+            "type": "http://dp.la/info/developers/map/SourceResource"
+        },
+        {
+            "dc:date": "1985/2005",
+            "dc:descrition": "A collection of rare postcards, collected between 1985 and 2005 by J. Smith",
+            "dc:rights": "This collection of postcards is owned by Prof. J. Smith, and held by Jones University",
+            "dc:rightsHolder": {
+                "id": "http://example.edu/smith1"
+            },
+            "dc:title": "Postcard Collection of Prof. J. Smith",
+            "dcterms:creator": {
+                "id": "http://example.edu/smith1"
+            },
+            "dcterms:subject": {
+                "id": "http://id.loc.gov/authorities/subjects/sh85105462"
+            },
+            "http://id.loc.gov/vocabulary/relators/cur": {
+                "id": "http://example.edu/curator1"
+            },
+            "http://id.loc.gov/vocabulary/relators/rps": {
+                "id": "http://example.edu/org2"
+            },
+            "id": "http://example.edu/rwo1",
+            "type": "http://dp.la/info/developers/map/SourceResource"
+        },
+        {
+            "id": "http://example.edu/org2",
+            "label": "Jones University",
+            "type": "http://xmlns.com/foaf/0.1/Organization"
+        },
+        {
+            "http://schema.org/affiliation": {
+                "id": "http://example.edu/org2"
+            },
+            "http://xmlns.com/foaf/0.1/name": "Molly Jones",
+            "id": "http://example.edu/curator1",
+            "type": "http://xmlns.com/foaf/0.1/Person"
+        },
+        {
+            "hasFile": [
+                "file:///cti/files/thumbnail.png",
+                "file:///tn1/files/thumbnail.jpg"
+            ],
+            "http://pcdm.org/use#hasOriginalFile": {
+                "id": "file:///tn1/files/thumbnail.jpg"
+            },
+            "id": "http://example.edu/tn1",
+            "label": "Collection Thumbnail Image",
+            "type": "http://pcdm.org/works#FileSet"
+        },
+        {
+            "created": "2015-09-23T16:00:00Z",
+            "dcterms:creator": {
+                "id": "http://example.edu/student1"
+            },
+            "hasFile": [
+                "file:///backfs2/files/tei.xml",
+                "file:///backfs2/files/transcription.txt"
+            ],
+            "http://pcdm.org/use#hasOriginalFile": {
+                "id": "file:///backfs2/files/tei.xml"
+            },
+            "id": "http://example.edu/backfs2",
+            "label": "Back of Postcard Transcription",
+            "type": "http://pcdm.org/works#FileSet"
+        },
+        {
+            "hasMember": [
+                "http://example.edu/back1",
+                "http://example.edu/front1"
+            ],
+            "http://pcdm.org/works#hasFileSet": {
+                "id": "http://example.edu/tn2"
+            },
+            "http://www.europeana.eu/schemas/edm/isRepresentationOf": {
+                "id": "http://example.edu/rwopc1"
+            },
+            "id": "http://example.edu/pc1",
+            "label": "Postcard",
+            "type": "Object"
+        },
+        {
+            "http://pcdm.org/works#hasFileSet": [
+                {
+                    "id": "http://example.edu/backfs1"
+                },
+                {
+                    "id": "http://example.edu/backfs2"
+                }
+            ],
+            "id": "http://example.edu/back1",
+            "label": "Back of Postcard",
+            "type": "Object"
+        },
+        {
+            "http://pcdm.org/works#hasFileSet": {
+                "id": "http://example.edu/frontfs1"
+            },
+            "id": "http://example.edu/front1",
+            "label": "Front of Postcard",
+            "type": "Object"
+        },
+        {
+            "http://xmlns.com/foaf/0.1/name": "Ulrika Anderson",
+            "id": "http://example.edu/student1",
+            "type": "http://xmlns.com/foaf/0.1/Person"
+        },
+        {
+            "hasMember": [
+                "http://example.edu/pc2",
+                "http://example.edu/pc1",
+                "http://example.edu/pc3"
+            ],
+            "hasRelatedObject": "http://example.edu/donor1",
+            "http://pcdm.org/works#hasFileSet": {
+                "id": "http://example.edu/tn1"
+            },
+            "http://www.europeana.eu/schemas/edm/isRepresentationOf": {
+                "id": "http://example.edu/rwo1"
+            },
+            "id": "http://example.edu/c1",
+            "label": "Postcard Collection",
+            "type": "Collection"
+        },
+        {
+            "http://schema.org/birthDate": "1820",
+            "http://schema.org/deathDate": "1886",
+            "http://xmlns.com/foaf/0.1/knows": {
+                "id": "http://example.edu/cantor1"
+            },
+            "http://xmlns.com/foaf/0.1/name": "Jane Bloggs",
+            "id": "http://example.edu/bloggs1",
+            "type": "http://xmlns.com/foaf/0.1/Person"
+        },
+        {
+            "hasFile": [
+                "file:///backfs1/files/back.jpg",
+                "file:///backfs1/files/back.jp2"
+            ],
+            "http://pcdm.org/use#hasOriginalFile": {
+                "id": "file:///backfs1/files/back.jp2"
+            },
+            "id": "http://example.edu/backfs1",
+            "label": "Back of Postcard Image",
+            "type": "http://pcdm.org/works#FileSet"
+        },
+        {
+            "hasFile": "file:///fs2/files/donorAgreement.pdf",
+            "http://pcdm.org/use#hasOriginalFile": {
+                "id": "file:///fs2/files/donorAgreement.pdf"
+            },
+            "id": "http://example.edu/fs2",
+            "label": "Collection Donor Agreement Document",
+            "type": "http://pcdm.org/works#FileSet"
+        },
+        {
+            "id": "http://example.edu/org1",
+            "label": "Smith Postcard Foundation",
+            "type": "http://xmlns.com/foaf/0.1/Organization"
+        },
+        {
+            "http://schema.org/affiliation": {
+                "id": "http://example.edu/org1"
+            },
+            "http://schema.org/birthDate": "1970-04-20",
+            "http://schema.org/birthPlace": {
+                "id": "http://example.edu/place1"
+            },
+            "http://schema.org/honorificPrefix": "Prof.",
+            "http://xmlns.com/foaf/0.1/familyName": "Smith",
+            "http://xmlns.com/foaf/0.1/givenName": "John",
+            "http://xmlns.com/foaf/0.1/name": "John Smith",
+            "id": "http://example.edu/smith1",
+            "type": "http://xmlns.com/foaf/0.1/Person"
+        },
+        {
+            "http://pcdm.org/works#hasFileSet": {
+                "id": "http://example.edu/fs2"
+            },
+            "http://www.europeana.eu/schemas/edm/isRepresentationOf": {
+                "id": "http://example.edu/rwo2"
+            },
+            "id": "http://example.edu/donor1",
+            "label": "Collection Donor Agreement",
+            "type": "Object"
+        }
+    ]
+}

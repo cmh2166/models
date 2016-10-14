@@ -1,0 +1,38 @@
+@prefix pcdm: <http://pcdm.org/models#> .
+@prefix pcdmw: <http://pcdm.org/works#> .
+@prefix pcdmu: <http://pcdm.org/use#> .
+@prefix svcs: <http://rdfs.org/sioc/services#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dpla: <http://dp.la/info/developers/map/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bf: <http://bibframe.org/vocab/> .
+@prefix marcrel: <http://id.loc.gov/vocabulary/relators/> .
+@prefix schema: <http://schema.org/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix : <http://example.edu/> .
+
+:pc1 a pcdm:Object ;
+  rdfs:label "Thesis of Jane Smith" ;
+  edm:isRepresentationOf :rwo1 ;
+  pcdm:hasMember : ;
+  pcdmw:hasFileSet :tn2 .
+:front1 a pcdm:Object ;
+  rdfs:label "Thesis Document" ;
+  pcdmw:hasFileSet :fs1 .
+:fs1 a pcdmw:FileSet .
+:back1 a pcdm:Object ;
+  rdfs:label "Dataset Used" ;
+  pcdmw:hasFileSet :backfs1, :backfs2 .
+:rwopc1 a dpla:SourceResource ;
+  dc:title "Thesis" ;
+  dcterms:creator :smith1 ;
+  dc:rightsHolder :smith1 ;
+  dc:date "2016" ;
+  dc:description "This thesis is about..." ;
+  marcrel:rps :org2 ;
+  dcterms:subject <http://id.loc.gov/authorities/subjects/sh85021262> ;
+  dcterms:medium <http://id.loc.gov/authorities/subjects/sh85105462> .
