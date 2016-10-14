@@ -78,6 +78,15 @@ If implementation option 1 or 3 is selected, this is the expected, minimal asser
 
  * rdfs:label or skos:prefLabel or foaf:name
 
+### Usage
+
+#### Defining New Agents
+
+```
+<repo:/agents/cmh2166> a foaf:Agent ;
+   rdfs:label "Christina Harlow" .
+```
+
 ### References to Agents
 
 * dcterms:creator
