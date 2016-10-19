@@ -12,7 +12,7 @@ There are four possibilities for including agents in repository object metadata,
 3. keep Agents as a Class, and could be externally or internally managed URIs (if no external URI, create an internal resource/URI).
 4. captured Agent information through a datatype property / string literal field on the digital repository object resources (following many repositories' current practice).
 
-5. Another option: Follow the VIVO model and create VCard resources for Agent entries which have very little information / could or probably will become better defined Agent resources in the future (or don't matter).
+Another option: Follow the VIVO model and create VCard resources for Agent entries which have very little information / could or probably will become better defined Agent resources in the future (or don't matter).
 
 Pros/cons of these are discussed in the Implementation of Context Classes document.
 
