@@ -1,50 +1,76 @@
-# Hybox Modeling as Modeling Exemplar
+# Hydra in a Box data model documentation
 
-## Goal
+[![Build Status](https://travis-ci.org/hybox/models.svg?branch=master)](https://travis-ci.org/hybox/models)
 
-Use and expand the Hybox Modeling work and documentation done so far so it can serve as an exemplar of data modeling in action.
+This data model documentation is built using [GitBook](https://toolchain.gitbook.com/), supported by a set of Gulp tasks.
 
-This work to make a modeling exemplar project involves:
+## Getting started
 
-1. Generating further documentation about the models given ;
-2. Update examples, sample RDF for the chosen models ;
-3. Look into creating machine-actionable metadata application profiles ;
-2. Evaluating the implementation of those models and profiles in the Hybox Sufia application layer ;
-3. Documenting that data/conceptual model to application layer for more general Hydra reference, discussion.
+You will need a working install of NodeJS and NPM to get started. On macOS:
 
-## Scope
+```bash
+$ brew install npm
+```
 
-The scope of this work includes:
+Clone the remote repository:
 
-* Data Modeling
-  * The structures and usage of the actual content
+```bash
+$ git clone https://github.com/hybox/models.git
+$ cd models
+```
 
-* Metadata Modeling
-  * Descriptive
-  * Administrative
-  * Rights
-  * Technical
+Install the dependencies for this project:
 
-* Linked Data modeling of technical requirements
-  * Ontology selection and development where no existing ontology suffices
-  * JSON-LD context and frame specification
+```bash
+$ npm install
+$ gitbook install
+```
 
-* Protocol requirements regarding Linked Data
-  * Web ACL
-  * LDP projection
+## Editing
 
-* Review Models versus Implementation through:
-  * Fedora 4 - Hydra / Sufia stack
-  * APIs (?)
-  * Implementation pattern requirements
-  * Behaviors
+Edit, and then to preview your changes:
 
+```bash
+$ gitbook serve
+```
 
-## Agreements
+To build a static version to the `_book` directory:
 
-* All models will be in RDF, following the Linked Data best practices
-* Core ontologies to build application profiles on include PCDM, DC, EDM/DPLA, FOAF, WebACL, ...
-* JSON-LD will a primary serialization
-* LDP will be the base interaction model
-* We will use the outcomes of Hydra Metadata WGs and engage with them
+```bash
+$ gulp build
+```
 
+To clean out the build directory:
+
+```bash
+$ gulp clean
+```
+
+## Publishing to GitHub Pages
+
+Ensure all your changes are committed, and then run the following:
+
+```bash
+$ gulp publish
+```
+
+## Optional: Building ebooks (PDF, ePUB, and MOBI)
+
+GitBook allows for publishing ebooks as part of the process, but adds a dependency on [Calibre](https://calibre-ebook.com/). See the [GitBook documentation](https://toolchain.gitbook.com/ebook.html) for more information.
+
+On macOS:
+
+```bash
+$ brew tap Caskroom/cask
+$ brew install Caskroom/cask/calibre
+```
+
+To build the ebooks (into the `_book`) directory:
+
+```bash
+$ gulp build-ebooks
+```
+
+## Troubleshoooing
+
+Automated builds run on Travis-CI. Follow the [GitBook](https://toolchain.gitbook.com/setup.html) installation instructions to get a working GitBook environment if the above doesn't work.

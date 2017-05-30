@@ -1,18 +1,3 @@
----
-title: Works
-author:
-- christina
-date: 2016-10-19 20:01:00
-model:
-    organization: the universe
-    project: Hydra Digital Collection
-    namespaces:
-        pcdm-works: http://pcdm.org/works#
-        pcdm: http://pcdm.org/models#
-        dc:
-        dct:
----
-
 # Works
 
 ## Introduction
@@ -24,10 +9,6 @@ The profile, structure, and expectations of Works change according to the Work (
 There is an optional relationship (edm:isRepresentationOf) between the Work in our repository and a RWO representing the "Intellectual Work" in external datastores (say, our catalog). While one could, theoretically, have an Intellectual Work for each Digital Work Object Level (or the Digital Collection itself), we are limiting these RWOs or Intellectual Works for the time being to those represented roughly by bibliographic objects - with an eye to system efficiency and object interoperability in delineating this. Resource abstractions/domain models like FRBR or RDA:Work etc. are not to be used here. 'Work' is used in a broader way.
 
 PCDM-Works:Work currently is the way to indicate Work right now, but it is set for removal from PCDM-Works the ontology. The indication of a "Work" as described here should be clear through context as well as typing. (fill more in here)
-
-## Use Cases
-
-* I'll add these later based off of hybox use cases.
 
 ## Model
 
@@ -113,4 +94,4 @@ From previous docs on Works:
 * dcterms:publisher (MAY)
 * marcrel:rps (MAY)
 * dcterms:extent (MAY)
-* dcterms:spatial (MAY)
+* dcterms:spatial (MAY)   
