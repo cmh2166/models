@@ -24,7 +24,7 @@ An Agent may be both identified in an authentication/authorization context and r
 
 #### `foaf:Agent`
 
-Entailment with `prov:Agent` (when used with `prov:actedOnBehalfOf`). 
+Entailment with `prov:Agent` (when used with `prov:actedOnBehalfOf`).
 
 **NOTE:** This is the expected superclass of all agents.
 
@@ -152,3 +152,16 @@ A new Agent SHOULD be declared as an instance of a subclass of `foaf:Agent`, rat
 #### From Other Agents
 
 * prov:actedOnBehalfOf (note: domain is prov:Agent)
+
+## Implementation
+
+There are four possibilities for including agents in repository object metadata, enumerated below:
+
+1. keep Agents as a Class, but always an externally-managed resource for instance data (i.e. each new field that expects an Agent instance will take a URI for an external to the repository system that represents the Agent - id.loc.gov, ULAN, local systems, etc.)
+2. keep Agents as a Class, but always an internally-managed resource for instance data (i.e., the underlying Fedora instance will manage all Agent instances, and relations to external system URIs will be synced through sameAs assertions on the Fedora-managed Agent resources).
+3. keep Agents as a Class, and could be externally or internally managed URIs (if no external URI, create an internal resource/URI).
+4. captured Agent information through a datatype property / string literal field on the digital repository object resources (following many repositories' current practice).
+
+Another option: Follow the VIVO model and create VCard resources for Agent entries which have very little information / could or probably will become better defined Agent resources in the future (or don't matter).
+
+Pros/cons of these are discussed in the Implementation of Context Classes document.
