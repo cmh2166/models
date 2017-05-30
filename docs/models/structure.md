@@ -7,4 +7,8 @@
 
 ### Defining Objects
 
-
+- Collection
+- Object
+- FileSet
+- Content
+- Technical
