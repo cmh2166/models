@@ -3,6 +3,8 @@
 
 ### Introduction
 
+Concepts are a key, context class (i.e. not a digital repository object core class). They are primarily topical and cover general or abstract areas (i.e. subjects like "Love"), but can also represent groups of objects (i.e. "Trombones" or "Firefighters").
+
 ### Model
 
 * skos:ConceptScheme  
@@ -60,3 +62,13 @@ The use of external taxonomies (concept schemes) is encouraged.  Several appropr
 * http://www.getty.edu/research/tools/vocabularies/index.html
 * https://www.w3.org/2001/sw/wiki/SKOS/Datasets
 
+## Implementation
+
+There are four possibilities for including Concepts in repository object metadata, enumerated below:
+
+1. keep Concepts as a Class, but always an externally-managed resource for instance data (i.e. each new field that expects an Concept instance will take a URI for an external to the repository system that represents the Concept - id.loc.gov, AAT, FAST, local systems, etc.)
+2. keep Concepts as a Class, but always an internally-managed resource for instance data (i.e., the underlying Fedora instance will manage all Concept instances, and relations to external system URIs will be synced through sameAs assertions on the Fedora-managed Concept resources).
+3. keep Concepts as a Class, and could be externally or internally managed URIs (if no external URI, create an internal resource/URI).
+4. captured Concept through a datatype property / string literal field on the digital repository object resources (following many repositories' current practice).
+
+Pros/cons of these are discussed in the Implementation of Context Classes document.
